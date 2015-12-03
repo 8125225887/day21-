@@ -94,7 +94,7 @@ function setMonthDays() {
                 }
                 else {
                     ++setDays;
-                    $("#table2 tr:eq("+ rows +") td:eq("+ coloumn +")").html(setDays);
+                    $("#table2 tr:eq("+ rows +") td:eq(" + coloumn + ")").html(setDays);
                 }
             }
         }
@@ -104,7 +104,7 @@ function setMonthDays() {
 function textValue(row, coloumn) {
     row = row + 1;
     $("#table2 tr:eq(" + row + ") td:eq(" + coloumn +")").css({"background-color": "660033", "color": "#ebf5fb","font-size":"50"});
-    var day_value = parseInt($("#table2 tr:eq(" + row + ") td:eq(" + coloumn +")").text());
+    var day_value = parseInt($("#table2 tr:eq(" + row + ") td:eq(" + coloumn + ")").text());
     $("#result").val(day_value + "/" + month + "/" + year);
     $("#table1,#table2").fadeOut("1500");
 }
