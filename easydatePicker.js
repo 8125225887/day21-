@@ -1,5 +1,5 @@
 
-var d = new Date(), displayOne, displayTwo, month = d.getMonth() + 1, year = d.getFullYear();
+var date = new Date(), displayOne, displayTwo, month = date.getMonth() + 1, year = date.getFullYear();
 
 function easyDatePicker()  {
 
@@ -38,11 +38,11 @@ function easyDatePicker()  {
     displayTwo += "</tr>";
 
     var setDays = 0;
-    var noOfDays = new Date(d.getFullYear(), d.getMonth()+1, 0).getDate();
+    var noOfDays = new Date(date.getFullYear(), date.getMonth()+1, 0).getDate();
     var d1 = new Date();
-    d1.setFullYear(d.getFullYear(), d.getMonth(), 1); //set the first day of the current month and current year
+    d1.setFullYear(date.getFullYear(), date.getMonth(), 1); //set the first day of the current month and current year
     var first = d1.getDay();  // taking day of the current month
-    console.log(d.getFullYear(), d.getMonth(), first);
+    console.log(date.getFullYear(), date.getMonth(), first);
     for (var rows = 0; rows < 6; rows++) {
         displayTwo += "<tr>";
         for (var coloumn = 0; coloumn < 7; coloumn++) {
@@ -66,8 +66,9 @@ function easyDatePicker()  {
     $("#tab1").html(displayOne);
     $("#tab2").html(displayTwo);
     function monthAndYearSelection() {
-        $("#month").val(d.getMonth()).attr("selected","selected");
-        $("#year").val(d.getFullYear());
+        $("#month").val(date.getMonth()).attr("selected","selected");
+        $("#year").val(date.getFullYear());
+        month = date.getMonth() + 1;
     }
       monthAndYearSelection();
 }
