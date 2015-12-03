@@ -52,7 +52,7 @@ function easyDatePicker()  {
             }
             else {
                   if (noOfDays === setDays) {
-                      displayTwo += "<td  onclick = 'textValue(" + rows +" , " + coloumn + ")'></td>";
+                      displayTwo += "<td  onclick = 'textValue(" + rows + " , " + coloumn + ")'></td>";
                   }
                   else {
                       displayTwo += "<td  onclick = 'textValue(" + rows + " , " + coloumn + ")'>" + (++setDays) + "</td>";
@@ -60,7 +60,7 @@ function easyDatePicker()  {
             }
         }
          displayTwo += "</tr>";
-     }
+    }
 
     displayTwo += "</table>";
     $("#tab1").html(displayOne);
