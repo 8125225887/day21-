@@ -85,7 +85,7 @@ function setMonthDays() {
     for ( var rows = 1; rows <= 6; rows++) {
         for (var coloumn = 0; coloumn < 7; coloumn++) {
             if ( first !== 0) {
-                $("#table2 tr:eq("+ rows +") td:eq("+ coloumn +")").html("");
+                $("#table2 tr:eq(" + rows + ") td:eq(" + coloumn + ")").html("");
                 first--;
             }
             else {
@@ -94,7 +94,7 @@ function setMonthDays() {
                 }
                 else {
                     ++setDays;
-                    $("#table2 tr:eq("+ rows +") td:eq(" + coloumn + ")").html(setDays);
+                    $("#table2 tr:eq(" + rows + ") td:eq(" + coloumn + ")").html(setDays);
                 }
             }
         }
