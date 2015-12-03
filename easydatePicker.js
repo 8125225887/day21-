@@ -1,7 +1,7 @@
 
 var d = new Date(), displayOne, displayTwo, month = d.getMonth() + 1, year = d.getFullYear();
 
-function myDatePicker()  {
+function easyDatePicker()  {
 
     $("#table1").show();
 
