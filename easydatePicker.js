@@ -47,15 +47,15 @@ function easyDatePicker()  {
         displayTwo += "<tr>";
         for (var coloumn = 0; coloumn < 7; coloumn++) {
             if ( first !== 0) {
-                displayTwo += "<td  onclick = 'textValue(" + rows +" , "+ coloumn + ")'></td>";
+                displayTwo += "<td  onclick = 'textValue(" + rows + " , " + coloumn + ")'></td>";
                 first--;
             }
             else {
                   if (noOfDays === setDays) {
-                      displayTwo += "<td  onclick = 'textValue(" + rows +" , "+ coloumn + ")'></td>";
+                      displayTwo += "<td  onclick = 'textValue(" + rows +" , " + coloumn + ")'></td>";
                   }
                   else {
-                      displayTwo += "<td  onclick = 'textValue("+ rows +" , "+ coloumn + ")'>" + (++setDays) + "</td>";
+                      displayTwo += "<td  onclick = 'textValue(" + rows + " , " + coloumn + ")'>" + (++setDays) + "</td>";
                   }
             }
         }
