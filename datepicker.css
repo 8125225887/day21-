@@ -1,0 +1,30 @@
+table {
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 5px 5px 0 rgb(192,192,192) ;
+  cursor: pointer;
+  margin-left: 150px;
+  position:absolute;
+  padding: 2px;
+  width: 288px;
+}
+select {
+  font-family: sans-serif center;
+  width: 110px;
+}
+
+#year {
+  width: 80px;
+}
+#year:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 3px #3498db;
+}
+select:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 3px #3498db;
+}
+#result:focus {
+  border-color: #3498db;
+  box-shadow: 0 0 3px #3498db;
+}
